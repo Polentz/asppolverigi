@@ -135,7 +135,10 @@ header h1 {
     line-height: 1.2;
     text-transform: uppercase;
     margin-top: 8px;
+}
 
+header h1:nth-child(2) {
+    font-size: 12px;
 }
 
 .main {
@@ -177,6 +180,11 @@ header h1 {
     padding: 32px;
     border: solid 1px #fff;
     max-width: 75%;
+    transition: all .5s ease;
+}
+
+.contact-box:hover {
+    background-color: #495DE9;
 }
 
 .contact-list p:nth-child(3) {
