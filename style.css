@@ -15,6 +15,42 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #E3F1FF;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #12184a85; 
+    border-radius: 50px;
+    border: solid 2px #E3F1FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #12184a; 
+}
+
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+li::selection,
+span::selection,
+button::selection,
+input::selection,
+textarea::selection {
+    background-color: #12184a;
+    color: #fff;
+}
+
+img::selection {
+    background-color: transparent;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -33,6 +69,14 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
 a {
     text-decoration: none;
     color: #12184a;
@@ -45,7 +89,7 @@ a:visited {
 
 .link {
     cursor: pointer;
-    padding: 2px 0;
+    padding: 1px 0;
     position: relative;
     white-space: nowrap;
 }
@@ -60,7 +104,6 @@ a:visited {
     top: 100%;
     left: 0;
     pointer-events: none;
-
     transform-origin: 100% 50%;
     transform: scale3d(0, 1, 1);
     transition: transform 0.3s;
@@ -127,21 +170,23 @@ header {
     display: none;
     position: absolute;
     width: 100vw;
+    text-transform: initial;
     padding-top: 10px;
     transition: all .5 ease;
+}
+
+.dropdown-content a {
+    text-transform: none;
 }
 
 .dropdown-menu:hover .dropdown-content {
     display: block;
 }
 
-
 .full-height {
     width: 100%;
     height: 100vh;
     position: relative;
-    /* position: sticky;
-    top: 0; */
 }
 
 .pad-top {
@@ -267,7 +312,7 @@ footer {
 .footer-container p,
 .footer-container a {
     font-size: 14px;
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .info span {
@@ -401,6 +446,11 @@ footer {
     width: 65%;
 }
 
+.footer-form-column p {
+    text-align: right;
+    margin-bottom: 8px;
+}
+
 .footer-column a {
     cursor: pointer;
 }
@@ -498,12 +548,12 @@ footer {
 }
 
 .list-status {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background: transparent;
     border: solid 2px #12184a;
     border-radius: 50%;
-    /* margin-top: 8px; */
+    margin-top: 2px;
     transition: .3s;
 }
 
@@ -526,6 +576,11 @@ footer {
 .list-info li {
     font-family: "HK Grotesk Light", sans-serif;
     margin: 8px 0 0 24px;
+}
+
+.list-info ul ul {
+    list-style-position: inside;
+    list-style-type: none;
 }
 
 .list-info a {
