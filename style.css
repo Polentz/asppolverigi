@@ -643,6 +643,26 @@ footer {
     border-bottom: solid 1px #12184a;
 }
 
+.to-top {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 15vh;
+    right: 5vw;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .35s ease;
+    transition: -webkit-transform .35s ease;
+    -o-transition: transform .35s ease;
+    transition: transform .35s ease;
+    transition: transform .35s ease, -webkit-transform .35s ease;
+}
+
+.to-top:hover {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+}
+
 .colophon {
     display: -webkit-box;
     display: -ms-flexbox;
