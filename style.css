@@ -712,7 +712,7 @@ footer {
 
 #list {
     padding: 5vh 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E3F1FF));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#E3F1FF));
     background-image: -o-linear-gradient(#fff, #E3F1FF);
     background-image: linear-gradient(#fff, #E3F1FF);
 }
