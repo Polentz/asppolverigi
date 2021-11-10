@@ -214,7 +214,7 @@ header {
     display: none;
     position: absolute;
     width: 100vw;
-    padding-top: 10px;
+    padding-top: 8px;
     -webkit-transition: all .5 ease;
     -o-transition: all .5 ease;
     transition: all .5 ease;
@@ -222,10 +222,13 @@ header {
 
 .dropdown-content a {
     text-transform: none;
+    line-height: 1.5;
 }
 
 .dropdown-menu:hover .dropdown-content {
-    display: block;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
 }
 
 .full-height {
