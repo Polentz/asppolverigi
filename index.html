@@ -187,10 +187,11 @@
             </div>
             <div class="footer-form-column">
                 <p>* campi obbligatori</p>
-                <form class="contact-form form">
-                    <input name="email" placeholder="Email *" required="required" aria-required="true">
+                <form class="contact-form form" action="https://formspree.io/f/xzbynbwr" method="POST">
+                    <input name="email" id="email-address" placeholder="Email *" required="required"
+                        aria-required="true">
                     <div>
-                        <textarea name="textarea" rows="8" placeholder="Messaggio *" required="required"
+                        <textarea name="message" id="message" placeholder="Messaggio *" rows="8" required="required"
                             aria-required="true"></textarea>
                     </div>
                     <button type="submit">Invia</button>
