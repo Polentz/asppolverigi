@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html" class="js-scroll"><img src="assets/logo.svg"></a>
+            <a href="index.html" onclick="window.location.reload()" class="js-scroll"><img src="assets/logo.svg"></a>
             <p>Azienda Servizi Polverigi</p>
         </div>
         <nav class="navbar">
@@ -182,28 +182,31 @@
     </section>
 
     <footer id="footer" class="section pad-top">
-        <div class="footer-container content">
-            <div class="footer-contact-column">
-                <h3>ASP Polverigi</h3>
-                <p><a href="tel:0719068122">071 9068122</a> (telefono)</p>
-                <p><a href="tel:+393760313493">376 0313493</a> (Whatsapp)</p>
-                <p><a href="tel:0719069531">071 9069531</a> (fax)</p>
-                <p><a href="mailto:info@asppolverigi.it">info@asppolverigi.it</a></p>
-                <p><a href="mailto:aspsrl@legalmail.it">aspsrl@legalmail.it</a> (posta certificata)</p>
+        <div class="section-container">
+            <div class="grid-container content">
+                <div class="footer-contact-column">
+                    <h3>ASP Polverigi</h3>
+                    <p><a href="tel:0719068122">071 9068122</a> (telefono)</p>
+                    <p><a href="tel:+393760313493">376 0313493</a> (Whatsapp)</p>
+                    <p><a href="tel:0719069531">071 9069531</a> (fax)</p>
+                    <p><a href="mailto:info@asppolverigi.it">info@asppolverigi.it</a></p>
+                    <p><a href="mailto:aspsrl@legalmail.it">aspsrl@legalmail.it</a> (posta certificata)</p>
+                </div>
+                <div class="footer-form-column">
+                    <p>* campi obbligatori</p>
+                    <form class="contact-form" action="contact.php" method="post">
+                        <input name="name" id="name" placeholder="Nome e cognome *" required="required"
+                            aria-required="true">
+                        <input name="email" id="email-address" placeholder="Email *" required="required"
+                            aria-required="true">
+                        <div>
+                            <textarea name="message" id="message" placeholder="Messaggio *" rows="8" required="required"
+                                aria-required="true"></textarea>
+                        </div>
+                        <button type="submit">Invia</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-form-column">
-                <p>* campi obbligatori</p>
-                <form class="contact-form" action="contact.php" method="post">
-                    <input name="email" id="email-address" placeholder="Email *" required="required"
-                        aria-required="true">
-                    <div>
-                        <textarea name="message" id="message" placeholder="Messaggio *" rows="8" required="required"
-                            aria-required="true"></textarea>
-                    </div>
-                    <button type="submit">Invia</button>
-                </form>
-            </div>
-        </div>
         </div>
         <div class="to-top">
             <a href="#home" class="js-scroll"><svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
