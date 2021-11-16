@@ -863,10 +863,6 @@ div.opened .list-status {
         z-index: 5;
         /* transition: all .5s ease; */
     }
-    .dropdown-content {
-        top: 16px;
-        left: 0;
-    }
     .menu ul {
         list-style: none;
     }

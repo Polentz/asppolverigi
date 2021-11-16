@@ -23,12 +23,12 @@
             <a href="#footer" class="link js-scroll">Contatti</a>
             <a href="servizio-gas.html" class="link">Servizio gas</a>
             <a href="amministrazione-trasparente.html" class="link">Amministrazione trasparente</a>
-            <div class="dropdown-menu">
+            <div id="dropdown" class="dropdown-menu cms-editable">
                 <ul>
-                    <li class="dropdown-btn">
+                    <li class="dropdown-btn cms-lock">
                         <a class="link">Documentazione<span>&dtrif;</span></a>
                     </li>
-                    <li class="dropdown-content">
+                    <li class="dropdown-content cms-repeatable">
                         <a href="">Elenco fornitori</a>
                     </li>
                 </ul>
@@ -57,7 +57,6 @@
         </div>
     </header>
 
-
     <section id="home" class="section pad-top">
         <svg viewBox="0 0 965 339" xmlns="http://www.w3.org/2000/svg">
             <g opacity="1">
@@ -78,19 +77,19 @@
         <div class="section-container">
             <div class="grid-container content">
                 <div class="info">
-                    <div class="hours">
+                    <div id="hours" class="hours cms-editable" data-format="text">
                         <h2>Orari di apertura sportello</h2>
                         <p>Lunedì – Mercoledì – Venerdì</p>
                         <p>dalle 08:30 alle 13:00</p>
                         <p>Martedì</p>
                         <p>dalle 13:30 alle 18:00</p>
                     </div>
-                    <div class="where">
+                    <div id="where" class="where cms-editable" data-format="text">
                         <h2>Dove siamo</h2>
                         <p>I nostri uffici sono a Polverigi in Via Marconi, 51</p>
                     </div>
                 </div>
-                <div class="contacts">
+                <div id="contacts-main" class="contacts cms-editable" data-format="text">
                     <h2>Contatti</h2>
                     <p><a href="tel:0719068122">071 9068122</a> (telefono)</p>
                     <p><a href="tel:+393760313493">376 0313493</a> (Whatsapp)</p>
@@ -102,8 +101,6 @@
 
         </div>
     </section>
-
-
 
     <section id="servizi" class="section pad-top">
         <div class="section-container">
@@ -117,7 +114,7 @@
                             <img class="icon" src="assets/icon-gas-blue.png">
                             <h2>Gas</h2>
                         </div>
-                        <div class="card-back gas">
+                        <div id="servizi-gas" class="card-back gas cms-editable" data-format="text">
                             <p>Visita il sito</p>
                             <h2><a href="https://www.estraprometeo.it/" target="_blank">Estra Prometeo</a></h2>
                             <p>per conoscere le offerte del fornitore</p>
@@ -132,7 +129,7 @@
                             <img class="icon" src="assets/icon-luce-blue.png">
                             <h2>Energia elettrica</h2>
                         </div>
-                        <div class="card-back energia">
+                        <div id="servizi-energia" class="card-back energia cms-editable" data-format="text">
                             <p>Visita il sito</p>
                             <h2><a href="https://www.deaelettrica.it/" target="_blank">Dea</a></h2>
                             <p>per saperne di più sulla distribuzione dell’energia elettrica per il Comune di Polverigi
@@ -149,7 +146,7 @@
                             <img class="icon" src="assets/icon-acqua-blue.png">
                             <h2>Acqua</h2>
                         </div>
-                        <div class="card-back acqua">
+                        <div id="servizi-acqua" class="card-back acqua cms-editable" data-format="text">
                             <p>Visita il sito</p>
                             <h2><a href="https://www.vivaservizi.it/" target="_blank">Vivaservizi</a></h2>
                             <p>per saperne di più sul servizio idrico</p>
@@ -172,7 +169,7 @@
                             <img class="icon" src="assets/icon-gas-blue.png">
                             <h2>Gas</h2>
                         </div>
-                        <div class="card-back int-back">
+                        <div id="int-gas" class="card-back int-back cms-editable" data-format="text">
                             <h2><a href="tel:800647454">800 64 74 54</a></h2>
                             <p>per il Comune di Polverigi</p>
                             <h2><a href="tel:800978971">800 97 89 71</a></h2>
@@ -186,7 +183,7 @@
                             <img class="icon" src="assets/icon-luce-blue.png">
                             <h2>Energia elettrica</h2>
                         </div>
-                        <div class="card-back int-back">
+                        <div id="int-energia" class="card-back int-back cms-editable" data-format="text">
                             <h2><a href="tel:800990490">800 99 04 90</a></h2>
                             <p>per il Comune di Polverigi</p>
                         </div>
@@ -198,7 +195,7 @@
                             <img class="icon" src="assets/icon-acqua-blue.png">
                             <h2>Acqua</h2>
                         </div>
-                        <div class="card-back int-back">
+                        <div id="int-acqua" class="card-back int-back cms-editable" data-format="text">
                             <h2><a href="tel:800181577">800 18 15 77</a></h2>
                         </div>
                     </div>
@@ -210,7 +207,7 @@
     <footer id="footer" class="section pad-top">
         <div class="section-container">
             <div class="grid-container content">
-                <div class="footer-contact-column">
+                <div id="contacts-footer" class="footer-contact-column cms-editable" data-format="text">
                     <h3>ASP Polverigi</h3>
                     <p><a href="tel:0719068122">071 9068122</a> (telefono)</p>
                     <p><a href="tel:+393760313493">376 0313493</a> (Whatsapp)</p>
@@ -245,7 +242,7 @@
                 </svg></a>
         </div>
         <div class="colophon">
-            <div class="colophon-content">
+            <div id="colophon" class="colophon-content cms-editable" data-format="text">
                 <p>ASP Polverigi S.r.l.</p>
                 <p>Via Marconi, 51 – 60020 Polverigi (AN)</p>
                 <p>Partita IVA 02062980426</p>
