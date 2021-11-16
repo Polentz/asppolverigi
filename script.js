@@ -6,7 +6,7 @@ inView(".section")
         section.classList.remove("in-viewport");
     });
 
-inView.threshold(0.5);
+inView.threshold(0.2);
 
 const sections = document.querySelectorAll(".section");
 sections.forEach((section, index) => {

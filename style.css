@@ -388,6 +388,10 @@ header {
             justify-content: space-between;
 }
 
+.where {
+    margin-top: 16px;
+}
+
 .contacts {
     /* -ms-grid-column: 3; */
         grid-column-start: 3;
@@ -404,9 +408,9 @@ header {
     margin-top: 8px;
 }
 
-.info span {
+/* .info span {
     margin-left: 24px;
-}
+} */
 
 .section-title {
     padding: 16px 0;
@@ -956,7 +960,7 @@ div.opened .list-status {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     .pad-top {
         padding-top: 16vh;
     }
