@@ -861,7 +861,7 @@ div.opened .list-status {
         background-color: #fff;
         border-bottom: solid 1px #12184a;
         z-index: 5;
-        transition: all .5s ease;
+        /* transition: all .5s ease; */
     }
     .dropdown-content {
         top: 16px;
