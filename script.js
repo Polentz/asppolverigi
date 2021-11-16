@@ -42,4 +42,10 @@ questions.forEach(question => {
         // then open the current section
         question.classList.toggle("opened")
     })
-})
+});
+
+document.getElementById("hamburger").addEventListener("click", (event) => {
+    document.getElementById("menu").classList.toggle("show");
+    document.querySelector("header").classList.toggle("color")
+    event.stopPropagation();
+});

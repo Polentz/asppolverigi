@@ -19,7 +19,7 @@
             <a href="index.html" onclick="window.location.reload()" class="js-scroll"><img src="assets/logo.svg"></a>
             <p>Azienda Servizi Polverigi</p>
         </div>
-        <nav class="navbar">
+        <nav class="navbar desktop">
             <a href="#footer" class="link js-scroll">Contatti</a>
             <a href="servizio-gas.html" class="link">Servizio gas</a>
             <a href="amministrazione-trasparente.html" class="link">Amministrazione trasparente</a>
@@ -34,7 +34,36 @@
                 </ul>
             </div>
         </nav>
+        <div class="menu-btn mobile" id="menu-btn">
+            <input type="checkbox" id="hamburger" />
+            <label for="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </div>
+        <div id="menu" class="menu">
+            <ul>
+                <li class="menu-item"><a href="servizio-gas.html" class="link">Servizio gas</a></li>
+                <li class="menu-item"><a href="amministrazione-trasparente.html" class="link">Amministrazione
+                        trasparente</a>
+                </li>
+                <li>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li class="dropdown-btn">
+                                <a class="link">Documentazione<span>&dtrif;</span></a>
+                            </li>
+                            <li class="dropdown-content">
+                                <a href="">Elenco fornitori</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
+
 
     <section id="home" class="section pad-top">
         <svg viewBox="0 0 965 339" xmlns="http://www.w3.org/2000/svg">
@@ -197,13 +226,13 @@
                 <div class="footer-form-column">
                     <p>* campi obbligatori</p>
                     <form class="contact-form" action="https://app.99inbound.com/api/e/cqk70o12" method="post">
-                        <input name="name" id="name" placeholder="Nome e cognome *" required="required"
+                        <input name="nome" id="name" placeholder="Nome e cognome *" required="required"
                             aria-required="true">
                         <input name="email" id="email-address" placeholder="Email *" required="required"
                             aria-required="true">
                         <div>
-                            <textarea name="message" id="message" placeholder="Messaggio *" rows="8" required="required"
-                                aria-required="true"></textarea>
+                            <textarea name="messaggio" id="message" placeholder="Messaggio *" rows="8"
+                                required="required" aria-required="true"></textarea>
                         </div>
                         <button type="submit">Invia</button>
                     </form>
