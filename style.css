@@ -408,10 +408,6 @@ header {
     margin-top: 8px;
 }
 
-/* .info span {
-    margin-left: 24px;
-} */
-
 .section-title {
     padding: 16px 0;
 }
@@ -793,7 +789,7 @@ div.opened .list-status {
 }
 
 
-/* first breackpoint ---> hamburger menu */
+/* first breackpoint */
 @media screen and (max-width: 1075px) {
     .desktop {
         display: none;
@@ -802,9 +798,6 @@ div.opened .list-status {
         display: block;
         position: relative;
     }
-    /* .menu-btn {
-        height: auto;
-    } */
     .menu-btn input {
         display: none;
     }
@@ -855,19 +848,18 @@ div.opened .list-status {
         position: absolute;
         top: 14vh;
         left: 0;
-        padding: 2vh 4vw 16vh 4vw;
+        padding: 2vh 4vw 8vh 4vw;
         text-align: left;
         width: 100vw;
         background-color: #fff;
         border-bottom: solid 1px #12184a;
         z-index: 5;
-        /* transition: all .5s ease; */
     }
     .menu ul {
         list-style: none;
     }
     .menu-item {
-        padding-bottom: 8px;
+        margin-bottom: 24px;
     }
     #menu.show {
         pointer-events: all;
@@ -910,8 +902,16 @@ div.opened .list-status {
     }
 }
 
-/* last breakpoint */
+/* third breakpoint */
 @media screen and (max-width: 550px) {
+    #home,
+    #servizi,
+    #pronto-intervento,
+    #top,
+    #list {
+        background-image: none;
+        background-color: #E3F1FF;
+    }
     #home svg {
         top: 50%;
         width: 90vw;
@@ -956,6 +956,7 @@ div.opened .list-status {
     }
 }
 
+/* mobile add-ons */
 @media screen and (max-width: 450px) {
     .pad-top {
         padding-top: 16vh;
